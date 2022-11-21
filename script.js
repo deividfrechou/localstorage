@@ -1,5 +1,9 @@
+
+//permite obter um elemento do documento a partir de seu atributo ID especificado
+
 function salvar(){
     localStorage.info = document.getElementById("dado").value;
+    document.getElementById("dado").value = "";
 }
 
 function carregar(){
@@ -8,6 +12,7 @@ function carregar(){
 
 function salvar2(){
     localStorage.setItem("nome",document.getElementById("dado").value);
+    document.getElementById("dado").value = "";
 }
 
 function carregar2(){
@@ -18,3 +23,4 @@ function apagar(){
     localStorage.removeItem("info");
     localStorage.removeItem("nome");
 }
+
